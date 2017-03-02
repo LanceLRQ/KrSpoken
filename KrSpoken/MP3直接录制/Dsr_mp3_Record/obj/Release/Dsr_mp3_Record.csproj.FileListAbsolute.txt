@@ -1,0 +1,9 @@
+D:\听雨口语\MP3直接录制\Dsr_mp3_Record\bin\Release\Dsr_mp3_Record.dll
+D:\听雨口语\MP3直接录制\Dsr_mp3_Record\bin\Release\Dsr_mp3_Record.pdb
+D:\听雨口语\MP3直接录制\Dsr_mp3_Record\bin\Release\microsoft.directx.directsound.dll
+D:\听雨口语\MP3直接录制\Dsr_mp3_Record\bin\Release\microsoft.directx.dll
+D:\听雨口语\MP3直接录制\Dsr_mp3_Record\bin\Release\yeti.mmedia.dll
+D:\听雨口语\MP3直接录制\Dsr_mp3_Record\bin\Release\yeti.mp3.dll
+D:\听雨口语\MP3直接录制\Dsr_mp3_Record\obj\Release\ResolveAssemblyReference.cache
+D:\听雨口语\MP3直接录制\Dsr_mp3_Record\obj\Release\Dsr_mp3_Record.dll
+D:\听雨口语\MP3直接录制\Dsr_mp3_Record\obj\Release\Dsr_mp3_Record.pdb

@@ -1,0 +1,7 @@
+D:\听雨口语\网络功能\TestCMD\115Test\bin\Debug\115Test.exe
+D:\听雨口语\网络功能\TestCMD\115Test\bin\Debug\115Test.pdb
+D:\听雨口语\网络功能\TestCMD\115Test\bin\Debug\KrSpoken.Downloader115.dll
+D:\听雨口语\网络功能\TestCMD\115Test\bin\Debug\KrSpoken.Downloader115.pdb
+D:\听雨口语\网络功能\TestCMD\115Test\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\听雨口语\网络功能\TestCMD\115Test\obj\x86\Debug\115Test.exe
+D:\听雨口语\网络功能\TestCMD\115Test\obj\x86\Debug\115Test.pdb

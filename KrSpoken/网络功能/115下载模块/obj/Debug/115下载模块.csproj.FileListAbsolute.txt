@@ -1,0 +1,6 @@
+D:\听雨口语\网络功能\115下载模块\bin\Debug\KrSpoken.Downloader115.dll
+D:\听雨口语\网络功能\115下载模块\bin\Debug\KrSpoken.Downloader115.pdb
+D:\听雨口语\网络功能\115下载模块\obj\Debug\ResolveAssemblyReference.cache
+D:\听雨口语\网络功能\115下载模块\obj\Debug\KrSpoken.Downloader115.dll
+D:\听雨口语\网络功能\115下载模块\obj\Debug\KrSpoken.Downloader115.pdb
+D:\听雨口语\网络功能\115下载模块\bin\Debug\KrSpoken.Downloader115.dll.config

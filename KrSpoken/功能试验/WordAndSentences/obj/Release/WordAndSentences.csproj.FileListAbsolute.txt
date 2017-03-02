@@ -1,0 +1,8 @@
+D:\听雨口语\功能试验\WordAndSentences\bin\Release\WordAndSentences.dll
+D:\听雨口语\功能试验\WordAndSentences\bin\Release\WordAndSentences.pdb
+D:\听雨口语\功能试验\WordAndSentences\obj\Release\ResolveAssemblyReference.cache
+D:\听雨口语\功能试验\WordAndSentences\obj\Release\KrSpoken.WordAndSentences.FrmWord.resources
+D:\听雨口语\功能试验\WordAndSentences\obj\Release\GenerateResource-ResGen.read.1.tlog
+D:\听雨口语\功能试验\WordAndSentences\obj\Release\GenerateResource-ResGen.write.1.tlog
+D:\听雨口语\功能试验\WordAndSentences\obj\Release\WordAndSentences.dll
+D:\听雨口语\功能试验\WordAndSentences\obj\Release\WordAndSentences.pdb

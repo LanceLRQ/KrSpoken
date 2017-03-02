@@ -1,0 +1,5 @@
+D:\听雨口语\功能试验\文件装箱拆箱实现类\装箱\bin\Release\KrPacker.dll
+D:\听雨口语\功能试验\文件装箱拆箱实现类\装箱\bin\Release\KrPacker.pdb
+D:\听雨口语\功能试验\文件装箱拆箱实现类\装箱\obj\Release\ResolveAssemblyReference.cache
+D:\听雨口语\功能试验\文件装箱拆箱实现类\装箱\obj\Release\KrPacker.dll
+D:\听雨口语\功能试验\文件装箱拆箱实现类\装箱\obj\Release\KrPacker.pdb

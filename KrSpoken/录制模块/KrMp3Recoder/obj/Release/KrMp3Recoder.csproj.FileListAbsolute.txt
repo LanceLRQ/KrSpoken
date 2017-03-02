@@ -1,0 +1,6 @@
+D:\听雨口语\录制模块\KrMp3Recoder\bin\Release\lame_enc.dll
+D:\听雨口语\录制模块\KrMp3Recoder\bin\Release\KrMp3Recoder.dll
+D:\听雨口语\录制模块\KrMp3Recoder\bin\Release\KrMp3Recoder.pdb
+D:\听雨口语\录制模块\KrMp3Recoder\obj\Release\ResolveAssemblyReference.cache
+D:\听雨口语\录制模块\KrMp3Recoder\obj\Release\KrMp3Recoder.dll
+D:\听雨口语\录制模块\KrMp3Recoder\obj\Release\KrMp3Recoder.pdb

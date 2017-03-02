@@ -1,0 +1,5 @@
+D:\听雨口语\功能试验\线程同步锁定测试\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\听雨口语\功能试验\线程同步锁定测试\bin\Debug\线程同步锁定测试.exe
+D:\听雨口语\功能试验\线程同步锁定测试\bin\Debug\线程同步锁定测试.pdb
+D:\听雨口语\功能试验\线程同步锁定测试\obj\x86\Debug\线程同步锁定测试.exe
+D:\听雨口语\功能试验\线程同步锁定测试\obj\x86\Debug\线程同步锁定测试.pdb

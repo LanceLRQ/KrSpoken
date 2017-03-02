@@ -1,0 +1,9 @@
+D:\听雨口语\客户端\听雨口语\bin\Release\KrPKInstall.exe
+D:\听雨口语\客户端\听雨口语\bin\Release\KrPKInstall.pdb
+D:\听雨口语\客户端\KrPKInstall\obj\x86\Release\ResolveAssemblyReference.cache
+D:\听雨口语\客户端\KrPKInstall\obj\x86\Release\KrSpoken.KrPKInstall.FrmM.resources
+D:\听雨口语\客户端\KrPKInstall\obj\x86\Release\KrSpoken.KrPKInstall.Properties.Resources.resources
+D:\听雨口语\客户端\KrPKInstall\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+D:\听雨口语\客户端\KrPKInstall\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+D:\听雨口语\客户端\KrPKInstall\obj\x86\Release\KrPKInstall.exe
+D:\听雨口语\客户端\KrPKInstall\obj\x86\Release\KrPKInstall.pdb

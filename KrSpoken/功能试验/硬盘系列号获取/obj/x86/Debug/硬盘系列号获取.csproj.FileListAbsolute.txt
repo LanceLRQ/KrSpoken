@@ -1,0 +1,5 @@
+D:\听雨口语\功能试验\硬盘系列号获取\bin\Debug\硬盘系列号获取.exe
+D:\听雨口语\功能试验\硬盘系列号获取\bin\Debug\硬盘系列号获取.pdb
+D:\听雨口语\功能试验\硬盘系列号获取\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\听雨口语\功能试验\硬盘系列号获取\obj\x86\Debug\硬盘系列号获取.exe
+D:\听雨口语\功能试验\硬盘系列号获取\obj\x86\Debug\硬盘系列号获取.pdb

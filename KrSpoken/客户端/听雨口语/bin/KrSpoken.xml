@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE dotfuscator SYSTEM "http://www.preemptive.com/dotfuscator/dtd/dotfuscator_v2.3.dtd">
+<dotfuscator version="2.3">
+  <!--This is application generated code. Do not edit manually.-->
+  <input>
+    <loadpaths />
+    <asmlist>
+      <inputassembly refid="0594248b-d6b0-447e-8805-070190541794">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <option>transformxaml</option>
+        <file dir="D:\听雨口语\客户端\听雨口语\bin\Release" name="KrSpoken.exe" />
+      </inputassembly>
+      <inputassembly refid="7448e0dc-306e-41a5-b260-fdb9699626d5">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <option>transformxaml</option>
+        <file dir="D:\听雨口语\客户端\听雨口语\bin\Release" name="KrPacker.dll" />
+      </inputassembly>
+      <inputassembly refid="c3932db0-824d-4797-bebc-7253eebc316d">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <option>transformxaml</option>
+        <file dir="D:\听雨口语\客户端\听雨口语\bin\Release" name="Net.dll" />
+      </inputassembly>
+      <inputassembly refid="788f7c1d-cacb-47dd-8cb4-566e0154b859">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <option>transformxaml</option>
+        <file dir="D:\听雨口语\客户端\听雨口语\bin\Release" name="KrPKInstall.exe" />
+      </inputassembly>
+      <inputassembly refid="4f117467-98b3-433e-8723-be8ece150a7f">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <option>transformxaml</option>
+        <file dir="D:\听雨口语\客户端\听雨口语\bin\Release" name="PlayListLib.dll" />
+      </inputassembly>
+      <inputassembly refid="d0a8df95-047d-460c-a387-6269d2bf586d">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <option>transformxaml</option>
+        <file dir="D:\听雨口语\客户端\听雨口语\bin\Release" name="Profile.dll" />
+      </inputassembly>
+      <inputassembly refid="b2e8c745-e4a6-4ee1-a779-5dd113447d7f">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <option>transformxaml</option>
+        <file dir="D:\听雨口语\客户端\听雨口语\bin\Release" name="VideoAudioPlayerLib.dll" />
+      </inputassembly>
+      <inputassembly refid="836b0c4b-d4a2-4f67-9524-65d46b804eff">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <option>transformxaml</option>
+        <file dir="D:\听雨口语\客户端\听雨口语\bin\Release" name="WordAndSentences.dll" />
+      </inputassembly>
+    </asmlist>
+  </input>
+  <output>
+    <file dir="e:\用户文件夹\Desktop\听雨口语" />
+  </output>
+  <renaming scheme="unprintable">
+    <option>enhancedOI</option>
+    <option>xmlserialization</option>
+    <mapping>
+      <mapoutput overwrite="false">
+        <file dir="${configdir}\Dotfuscated" name="Map.xml" />
+      </mapoutput>
+    </mapping>
+    <referencerulelist>
+      <referencerule rulekey="{89769974-93E9-4e71-8D92-BE70E855ACFC}" />
+      <referencerule rulekey="{494EA3BA-B947-44B5-BEE8-A11CC85AAF9B}" />
+      <referencerule rulekey="{6655B10A-FD58-462d-8D4F-5B1316DFF0FF}" />
+      <referencerule rulekey="{7D9C8B02-2383-420f-8740-A9760394C2C1}" />
+      <referencerule rulekey="{229FD6F8-5BCC-427b-8F72-A7A413ECDF1A}" />
+      <referencerule rulekey="{2B7E7C8C-A39A-4db8-9DFC-6AFD38509061}" />
+      <referencerule rulekey="{4D81E604-A545-4631-8B6D-C3735F793F80}" />
+    </referencerulelist>
+  </renaming>
+  <controlflow level="high" />
+  <stringencrypt>
+    <includelist>
+      <assembly>
+        <file dir="D:\听雨口语\客户端\听雨口语\bin\Release" name="KrSpoken.exe" />
+      </assembly>
+      <assembly>
+        <file dir="D:\听雨口语\客户端\听雨口语\bin\Release" name="KrPKInstall.exe" />
+      </assembly>
+      <assembly>
+        <file dir="D:\听雨口语\客户端\听雨口语\bin\Release" name="KrPacker.dll" />
+      </assembly>
+      <assembly>
+        <file dir="D:\听雨口语\客户端\听雨口语\bin\Release" name="Net.dll" />
+      </assembly>
+      <assembly>
+        <file dir="D:\听雨口语\客户端\听雨口语\bin\Release" name="PlayListLib.dll" />
+      </assembly>
+      <assembly>
+        <file dir="D:\听雨口语\客户端\听雨口语\bin\Release" name="Profile.dll" />
+      </assembly>
+      <assembly>
+        <file dir="D:\听雨口语\客户端\听雨口语\bin\Release" name="VideoAudioPlayerLib.dll" />
+      </assembly>
+      <assembly>
+        <file dir="D:\听雨口语\客户端\听雨口语\bin\Release" name="WordAndSentences.dll" />
+      </assembly>
+    </includelist>
+  </stringencrypt>
+  <sos mergeruntime="true">
+    <option>dontsendtamper</option>
+  </sos>
+  <smartobfuscation>
+    <smartobfuscationreport verbosity="all" overwrite="false" />
+  </smartobfuscation>
+</dotfuscator>

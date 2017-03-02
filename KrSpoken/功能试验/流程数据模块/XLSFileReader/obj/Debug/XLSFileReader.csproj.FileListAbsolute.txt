@@ -1,0 +1,7 @@
+D:\听雨口语\功能试验\流程数据模块\XLSFileReader\bin\Debug\XLSFileReader.dll
+D:\听雨口语\功能试验\流程数据模块\XLSFileReader\bin\Debug\XLSFileReader.pdb
+D:\听雨口语\功能试验\流程数据模块\XLSFileReader\bin\Debug\PlayListLib.dll
+D:\听雨口语\功能试验\流程数据模块\XLSFileReader\bin\Debug\PlayListLib.pdb
+D:\听雨口语\功能试验\流程数据模块\XLSFileReader\obj\Debug\ResolveAssemblyReference.cache
+D:\听雨口语\功能试验\流程数据模块\XLSFileReader\obj\Debug\XLSFileReader.dll
+D:\听雨口语\功能试验\流程数据模块\XLSFileReader\obj\Debug\XLSFileReader.pdb

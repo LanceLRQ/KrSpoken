@@ -1,0 +1,5 @@
+D:\听雨口语\功能试验\流程数据模块\PlayListLib\bin\Debug\PlayListLib.dll
+D:\听雨口语\功能试验\流程数据模块\PlayListLib\bin\Debug\PlayListLib.pdb
+D:\听雨口语\功能试验\流程数据模块\PlayListLib\obj\Debug\ResolveAssemblyReference.cache
+D:\听雨口语\功能试验\流程数据模块\PlayListLib\obj\Debug\PlayListLib.dll
+D:\听雨口语\功能试验\流程数据模块\PlayListLib\obj\Debug\PlayListLib.pdb

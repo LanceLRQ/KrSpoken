@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>yeti.mp3</name>
+    </assembly>
+    <members>
+        <member name="T:Yeti.Lame.Lame_encDll">
+            <summary>
+            Lame_enc DLL functions
+            </summary>
+        </member>
+        <member name="M:Yeti.Lame.Lame_encDll.beInitStream(Yeti.Lame.BE_CONFIG,System.UInt32@,System.UInt32@,System.UInt32@)">
+            <summary>
+            This function is the first to call before starting an encoding stream.
+            </summary>
+            <param name="pbeConfig">Encoder settings</param>
+            <param name="dwSamples">Receives the number of samples (not bytes, each sample is a SHORT) to send to each beEncodeChunk() on return.</param>
+            <param name="dwBufferSize">Receives the minimun number of bytes that must have the output(result) buffer</param>
+            <param name="phbeStream">Receives the stream handle on return</param>
+            <returns>On success: BE_ERR_SUCCESSFUL</returns>
+        </member>
+        <member name="M:Yeti.Lame.Lame_encDll.beEncodeChunk(System.UInt32,System.UInt32,System.Int16[],System.Byte[],System.UInt32@)">
+            <summary>
+            Encodes a chunk of samples. Please note that if you have set the output to 
+            generate mono MP3 files you must feed beEncodeChunk() with mono samples
+            </summary>
+            <param name="hbeStream">Handle of the stream.</param>
+            <param name="nSamples">Number of samples to be encoded for this call. 
+            This should be identical to what is returned by beInitStream(), 
+            unless you are encoding the last chunk, which might be smaller.</param>
+            <param name="pInSamples">Array of 16-bit signed samples to be encoded. 
+            These should be in stereo when encoding a stereo MP3 
+            and mono when encoding a mono MP3</param>
+            <param name="pOutput">Buffer where to write the encoded data. 
+            This buffer should be at least of the minimum size returned by beInitStream().</param>
+            <param name="pdwOutput">Returns the number of bytes of encoded data written. 
+            The amount of data written might vary from chunk to chunk</param>
+            <returns>On success: BE_ERR_SUCCESSFUL</returns>
+        </member>
+        <member name="M:Yeti.Lame.Lame_encDll.beEncodeChunk(System.UInt32,System.UInt32,System.IntPtr,System.Byte[],System.UInt32@)">
+            <summary>
+            Encodes a chunk of samples. Please note that if you have set the output to 
+            generate mono MP3 files you must feed beEncodeChunk() with mono samples
+            </summary>
+            <param name="hbeStream">Handle of the stream.</param>
+            <param name="nSamples">Number of samples to be encoded for this call. 
+            This should be identical to what is returned by beInitStream(), 
+            unless you are encoding the last chunk, which might be smaller.</param>
+            <param name="pSamples">Pointer at the 16-bit signed samples to be encoded. 
+            InPtr is used to pass any type of array without need of make memory copy, 
+            then gaining in performance. Note that nSamples is not the number of bytes,
+            but samples (is sample is a SHORT)</param>
+            <param name="pOutput">Buffer where to write the encoded data. 
+            This buffer should be at least of the minimum size returned by beInitStream().</param>
+            <param name="pdwOutput">Returns the number of bytes of encoded data written. 
+            The amount of data written might vary from chunk to chunk</param>
+            <returns>On success: BE_ERR_SUCCESSFUL</returns>
+        </member>
+        <member name="M:Yeti.Lame.Lame_encDll.EncodeChunk(System.UInt32,System.Byte[],System.Int32,System.UInt32,System.Byte[],System.UInt32@)">
+            <summary>
+            Encodes a chunk of samples. Samples are contained in a byte array
+            </summary>
+            <param name="hbeStream">Handle of the stream.</param>
+            <param name="buffer">Bytes to encode</param>
+            <param name="index">Position of the first byte to encode</param>
+            <param name="nBytes">Number of bytes to encode (not samples, samples are two byte lenght)</param>
+            <param name="pOutput">Buffer where to write the encoded data.
+            This buffer should be at least of the minimum size returned by beInitStream().</param>
+            <param name="pdwOutput">Returns the number of bytes of encoded data written. 
+            The amount of data written might vary from chunk to chunk</param>
+            <returns>On success: BE_ERR_SUCCESSFUL</returns>
+        </member>
+        <member name="M:Yeti.Lame.Lame_encDll.EncodeChunk(System.UInt32,System.Byte[],System.Byte[],System.UInt32@)">
+            <summary>
+            Encodes a chunk of samples. Samples are contained in a byte array
+            </summary>
+            <param name="hbeStream">Handle of the stream.</param>
+            <param name="buffer">Bytes to encode</param>
+            <param name="pOutput">Buffer where to write the encoded data.
+            This buffer should be at least of the minimum size returned by beInitStream().</param>
+            <param name="pdwOutput">Returns the number of bytes of encoded data written. 
+            The amount of data written might vary from chunk to chunk</param>
+            <returns>On success: BE_ERR_SUCCESSFUL</returns>
+        </member>
+        <member name="M:Yeti.Lame.Lame_encDll.beDeinitStream(System.UInt32,System.Byte[],System.UInt32@)">
+            <summary>
+            This function should be called after encoding the last chunk in order to flush 
+            the encoder. It writes any encoded data that still might be left inside the 
+            encoder to the output buffer. This function should NOT be called unless 
+            you have encoded all of the chunks in your stream.
+            </summary>
+            <param name="hbeStream">Handle of the stream.</param>
+            <param name="pOutput">Where to write the encoded data. This buffer should be 
+            at least of the minimum size returned by beInitStream().</param>
+            <param name="pdwOutput">Returns number of bytes of encoded data written.</param>
+            <returns>On success: BE_ERR_SUCCESSFUL</returns>
+        </member>
+        <member name="M:Yeti.Lame.Lame_encDll.beCloseStream(System.UInt32)">
+            <summary>
+            Last function to be called when finished encoding a stream. 
+            Should unlike beDeinitStream() also be called if the encoding is canceled.
+            </summary>
+            <param name="hbeStream">Handle of the stream.</param>
+            <returns>On success: BE_ERR_SUCCESSFUL</returns>
+        </member>
+        <!-- 对于成员“M:Yeti.Lame.Lame_encDll.beVersion(Yeti.Lame.BE_VERSION)”忽略有格式错误的 XML 注释 -->
+        <member name="T:Yeti.MMedia.Mp3.Mp3Writer">
+            <summary>
+            Convert PCM audio data to PCM format
+            The data received through the method write is assumed as PCM audio data. 
+            This data is converted to MP3 format and written to the result stream. 
+            <seealso cref="!:yeti.mmedia.utils.AudioFileWriter"/>
+            <seealso cref="!:yeti.Lame"/>
+            </summary>
+        </member>
+        <member name="M:Yeti.MMedia.Mp3.Mp3Writer.#ctor(System.IO.Stream,WaveLib.WaveFormat)">
+            <summary>
+            Create a Mp3Writer with the default MP3 format
+            </summary>
+            <param name="Output">Stream that will hold the MP3 resulting data</param>
+            <param name="InputDataFormat">PCM format of input data</param>
+        </member>
+        <member name="M:Yeti.MMedia.Mp3.Mp3Writer.#ctor(System.IO.Stream,Yeti.MMedia.Mp3.Mp3WriterConfig)">
+            <summary>
+            Create a Mp3Writer with specific MP3 format
+            </summary>
+            <param name="Output">Stream that will hold the MP3 resulting data</param>
+            <param name="cfg">Writer Config</param>
+        </member>
+        <member name="M:Yeti.MMedia.Mp3.Mp3Writer.#ctor(System.IO.Stream,WaveLib.WaveFormat,Yeti.Lame.BE_CONFIG)">
+            <summary>
+            Create a Mp3Writer with specific MP3 format
+            </summary>
+            <param name="Output">Stream that will hold the MP3 resulting data</param>
+            <param name="InputDataFormat">PCM format of input data</param>
+            <param name="Mp3Config">Desired MP3 config</param>
+        </member>
+        <member name="M:Yeti.MMedia.Mp3.Mp3Writer.Write(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Send to the compressor an array of bytes.
+            </summary>
+            <param name="buffer">Input buffer</param>
+            <param name="index">Start position</param>
+            <param name="count">Bytes to process. The optimal size, to avoid buffer copy, is a multiple of <see cref="!:yeti.mmedia.utils.AudioFileWriter.OptimalBufferSize"/></param>
+        </member>
+        <member name="M:Yeti.MMedia.Mp3.Mp3Writer.Write(System.Byte[])">
+            <summary>
+            Send to the compressor an array of bytes.
+            </summary>
+            <param name="buffer">The optimal size, to avoid buffer copy, is a multiple of <see cref="!:yeti.mmedia.utils.AudioFileWriter.OptimalBufferSize"/></param>
+        </member>
+        <member name="P:Yeti.MMedia.Mp3.Mp3Writer.Mp3Config">
+            <summary>
+            MP3 Config of final data
+            </summary>
+        </member>
+        <member name="T:Yeti.MMedia.Mp3.EditMp3Writer">
+            <summary>
+            Summary description for EditMp3Writer.
+            </summary>
+        </member>
+        <member name="M:Yeti.MMedia.Mp3.EditMp3Writer.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Yeti.MMedia.Mp3.EditMp3Writer.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Yeti.MMedia.Mp3.Mp3WriterConfig">
+            <summary>
+            Config information for MP3 writer
+            </summary>
+        </member>
+    </members>
+</doc>

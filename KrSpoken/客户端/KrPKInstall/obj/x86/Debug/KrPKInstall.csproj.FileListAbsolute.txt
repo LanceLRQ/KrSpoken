@@ -1,0 +1,16 @@
+D:\听雨口语\客户端\KrPKInstall\bin\Debug\KrPKInstall.exe
+D:\听雨口语\客户端\KrPKInstall\bin\Debug\KrPKInstall.pdb
+D:\听雨口语\客户端\KrPKInstall\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\听雨口语\客户端\KrPKInstall\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+D:\听雨口语\客户端\KrPKInstall\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+D:\听雨口语\客户端\KrPKInstall\obj\x86\Debug\KrPKInstall.exe
+D:\听雨口语\客户端\KrPKInstall\obj\x86\Debug\KrPKInstall.pdb
+D:\听雨口语\客户端\KrPKInstall\obj\x86\Debug\KrSpoken.KrPKInstall.FrmM.resources
+D:\听雨口语\客户端\KrPKInstall\obj\x86\Debug\KrSpoken.KrPKInstall.Properties.Resources.resources
+D:\听雨口语\客户端\KrPKInstall\bin\Debug\Profile.dll
+D:\听雨口语\客户端\KrPKInstall\bin\Debug\Profile.pdb
+D:\听雨口语\客户端\KrPKInstall\bin\Debug\PlayListLib.dll
+D:\听雨口语\客户端\KrPKInstall\bin\Debug\SevenZipSharp.dll
+D:\听雨口语\客户端\KrPKInstall\bin\Debug\PlayListLib.pdb
+D:\听雨口语\客户端\听雨口语\bin\Release\KrPKInstall.exe
+D:\听雨口语\客户端\听雨口语\bin\Release\KrPKInstall.pdb

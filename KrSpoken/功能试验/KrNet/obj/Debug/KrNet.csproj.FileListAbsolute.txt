@@ -1,0 +1,7 @@
+D:\听雨口语\功能试验\KrNet\bin\Debug\Net.dll
+D:\听雨口语\功能试验\KrNet\bin\Debug\Net.pdb
+D:\听雨口语\功能试验\KrNet\obj\Debug\ResolveAssemblyReference.cache
+D:\听雨口语\功能试验\KrNet\obj\Debug\Net.dll
+D:\听雨口语\功能试验\KrNet\obj\Debug\Net.pdb
+D:\听雨口语\功能试验\KrNet\bin\Debug\Profile.dll
+D:\听雨口语\功能试验\KrNet\bin\Debug\Profile.pdb

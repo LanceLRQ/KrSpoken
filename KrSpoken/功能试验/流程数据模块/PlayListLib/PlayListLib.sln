@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayListLib", "PlayListLib.csproj", "{06D1DCDB-2724-4926-820B-76C3E9FBF7FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XLSFileReader", "..\XLSFileReader\XLSFileReader.csproj", "{F675FB4C-657D-4403-A316-A7A1BBDEF370}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06D1DCDB-2724-4926-820B-76C3E9FBF7FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06D1DCDB-2724-4926-820B-76C3E9FBF7FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06D1DCDB-2724-4926-820B-76C3E9FBF7FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06D1DCDB-2724-4926-820B-76C3E9FBF7FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F675FB4C-657D-4403-A316-A7A1BBDEF370}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F675FB4C-657D-4403-A316-A7A1BBDEF370}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F675FB4C-657D-4403-A316-A7A1BBDEF370}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F675FB4C-657D-4403-A316-A7A1BBDEF370}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

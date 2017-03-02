@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5B2CD1CE-3165-4321-B399-C1D6514A846A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KrSpoken</RootNamespace>
+    <AssemblyName>KrSpoken</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\听雨口语\发布\客户端\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>Custom</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationIcon>KrSpoken.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\..\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="KrMp3Recoder, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\KrMp3Recoder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Microsoft.DirectX.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.DirectSound, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Microsoft.DirectX.DirectSound.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="yeti.mmedia, Version=1.0.4397.22224, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\yeti.mmedia.dll</HintPath>
+    </Reference>
+    <Reference Include="yeti.mp3, Version=1.0.4397.22241, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\yeti.mp3.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Background.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Background.resx</DependentUpon>
+    </Compile>
+    <Compile Include="FileDecode.cs" />
+    <Compile Include="FrmAnswer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnswer.Designer.cs">
+      <DependentUpon>FrmAnswer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChangeBg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChangeBg.Designer.cs">
+      <DependentUpon>FrmChangeBg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDownPkList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDownPkList.Designer.cs">
+      <DependentUpon>FrmDownPkList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMyInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMyInfo.Designer.cs">
+      <DependentUpon>FrmMyInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPractice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPractice.Designer.cs">
+      <DependentUpon>FrmPractice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTest.Designer.cs">
+      <DependentUpon>FrmTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserReg.Designer.cs">
+      <DependentUpon>FrmUserReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainButton.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MainButton.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerButton.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlayerButton.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FrmExam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExam.Designer.cs">
+      <DependentUpon>FrmExam.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Background.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Background.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAnswer.resx">
+      <DependentUpon>FrmAnswer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChangeBg.resx">
+      <DependentUpon>FrmChangeBg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDownPkList.resx">
+      <DependentUpon>FrmDownPkList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMyInfo.resx">
+      <DependentUpon>FrmMyInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPractice.resx">
+      <DependentUpon>FrmPractice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTest.resx">
+      <DependentUpon>FrmTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserReg.resx">
+      <DependentUpon>FrmUserReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainButton.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MainButton.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayerButton.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PlayerButton.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="FrmExam.resx">
+      <DependentUpon>FrmExam.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="KrSpoken.ico" />
+    <None Include="Resources\View4.png" />
+    <None Include="Resources\View3.png" />
+    <None Include="Resources\View2.png" />
+    <None Include="Resources\View1.png" />
+    <None Include="Resources\Test.jpg" />
+    <None Include="Resources\NoBody.PNG" />
+    <None Include="Resources\icon_2.png" />
+    <None Include="Resources\Bar_Head.png" />
+    <None Include="Resources\Bg_0.jpg" />
+    <None Include="Resources\State_Record.png" />
+    <None Include="Resources\State_Listen.png" />
+    <None Include="Resources\Play_Bar.png" />
+    <None Include="Resources\But_RePlay_2.png" />
+    <None Include="Resources\But_RePlay_1.png" />
+    <None Include="Resources\But_Play_2.png" />
+    <None Include="Resources\But_Play_1.png" />
+    <None Include="Resources\But_Pause_2.png" />
+    <None Include="Resources\But_Pause_1.png" />
+    <None Include="Resources\But_List_3.png" />
+    <None Include="Resources\But_List_2.png" />
+    <None Include="Resources\But_List_1.png" />
+    <None Include="Resources\user_16.png" />
+    <None Include="Resources\换肤.png" />
+    <None Include="Resources\but9.png" />
+    <None Include="Resources\but8.png" />
+    <None Include="Resources\but7.png" />
+    <None Include="Resources\but6.png" />
+    <None Include="Resources\but5.png" />
+    <None Include="Resources\but4.png" />
+    <None Include="Resources\but3.png" />
+    <None Include="Resources\but2.png" />
+    <None Include="Resources\but1.png" />
+    <None Include="Resources\bar.png" />
+    <None Include="Resources\Bg_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\功能试验\KrNet\KrNet.csproj">
+      <Project>{1B10EED6-5891-4BDD-A795-DD1693D652E1}</Project>
+      <Name>KrNet</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\功能试验\WordAndSentences\WordAndSentences.csproj">
+      <Project>{9B1AA1CA-B5C6-4C6A-A070-BDA030F99963}</Project>
+      <Name>WordAndSentences</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\功能试验\文件装箱拆箱实现类\装箱\装箱.csproj">
+      <Project>{FBA9E1E0-5FD0-4E2D-BAD3-B5776A9D3054}</Project>
+      <Name>装箱</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\功能试验\流程数据模块\PlayListLib\PlayListLib.csproj">
+      <Project>{06D1DCDB-2724-4926-820B-76C3E9FBF7FD}</Project>
+      <Name>PlayListLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\功能试验\视频播放\VideoAudioPlayerLib\VideoAudioPlayerLib.csproj">
+      <Project>{FA677359-ABF6-468A-9736-CCC20F1B644B}</Project>
+      <Name>VideoAudioPlayerLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Profile\Profile.csproj">
+      <Project>{C782237F-EB6E-4365-A263-E0536FE761AB}</Project>
+      <Name>Profile</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Lyoko_KR_PkMod">
+      <Guid>{34C27FD2-0A9F-4E2F-8B42-96C99CB89364}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

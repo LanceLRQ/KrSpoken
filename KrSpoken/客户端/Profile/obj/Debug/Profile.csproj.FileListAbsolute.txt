@@ -1,0 +1,5 @@
+D:\听雨口语\客户端\Profile\bin\Debug\Profile.dll
+D:\听雨口语\客户端\Profile\bin\Debug\Profile.pdb
+D:\听雨口语\客户端\Profile\obj\Debug\ResolveAssemblyReference.cache
+D:\听雨口语\客户端\Profile\obj\Debug\Profile.dll
+D:\听雨口语\客户端\Profile\obj\Debug\Profile.pdb

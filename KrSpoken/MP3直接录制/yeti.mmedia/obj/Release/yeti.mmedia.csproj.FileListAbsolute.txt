@@ -1,0 +1,8 @@
+D:\听雨口语\MP3直接录制\yeti.mmedia\bin\Release\yeti.mmedia.dll
+D:\听雨口语\MP3直接录制\yeti.mmedia\obj\Release\ResolveAssemblyReference.cache
+D:\听雨口语\MP3直接录制\yeti.mmedia\obj\Release\Yeti.MMedia.EditWaveWriter.resources
+D:\听雨口语\MP3直接录制\yeti.mmedia\obj\Release\Yeti.MMedia.EditFormat.resources
+D:\听雨口语\MP3直接录制\yeti.mmedia\obj\Release\Yeti.Controls.NumericTextBox.resources
+D:\听雨口语\MP3直接录制\yeti.mmedia\obj\Release\GenerateResource-ResGen.read.1.tlog
+D:\听雨口语\MP3直接录制\yeti.mmedia\obj\Release\GenerateResource-ResGen.write.1.tlog
+D:\听雨口语\MP3直接录制\yeti.mmedia\obj\Release\yeti.mmedia.dll

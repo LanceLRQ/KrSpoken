@@ -1,0 +1,97 @@
+
+'将一个字节数组进行Base64编码，并返回字符串
+Public Function EncodeBase64Byte(sValue() As Byte) As String
+    Dim lCtr                As Long
+    Dim lPtr                As Long
+    Dim lLen                As Long
+    Dim sEncoded            As String
+    Dim Bits8(1 To 3)       As Byte
+    Dim Bits6(1 To 4)       As Byte
+    
+    Dim I As Integer
+    
+    InitBase
+ 
+    For lCtr = 1 To UBound(sValue) + 1 Step 3
+        For I = 1 To 3
+            If lCtr + I - 2 <= UBound(sValue) Then
+                Bits8(I) = sValue(lCtr + I - 2)
+                lLen = 3
+            Else
+                Bits8(I) = 0
+                lLen = lLen - 1
+            End If
+        Next
+ 
+        '//转换字符串为数组，然后转换为4个6位(0-63)
+        Bits6(1) = (Bits8(1) And &HFC) \ 4
+        Bits6(2) = (Bits8(1) And &H3) * &H10 + (Bits8(2) And &HF0) \ &H10
+        Bits6(3) = (Bits8(2) And &HF) * 4 + (Bits8(3) And &HC0) \ &H40
+        Bits6(4) = Bits8(3) And &H3F
+ 
+        '//添加4个新字符
+        For lPtr = 1 To lLen + 1
+            sEncoded = sEncoded & psBase64Chr(Bits6(lPtr))
+        Next
+    Next
+ 
+    '//不足4位，以=填充
+    Select Case lLen + 1
+        Case 2: sEncoded = sEncoded & "=="
+        Case 3: sEncoded = sEncoded & "="
+        Case 4:
+    End Select
+ 
+    EncodeBase64Byte = sEncoded
+End Function
+ 
+
+'对字符串进行Base64编码并返回字符串
+Public Function EncodeBase64String(str2Encode As String) As String
+    Dim sValue()            As Byte
+    sValue = StrConv(str2Encode, vbFromUnicode)
+    EncodeBase64String = EncodeBase64Byte(sValue)
+End Function
+
+'对文件进行Base64编码并返回编码后的Base64字符串
+Public Function EncodFileToBase64String(strFileSource As String)
+    Dim lpdata() As Byte, _
+        I As Long, _
+        n As Long ', _
+        fso As New Scripting.FileSystemObject
+
+    'If Not fso.FileExists(strFileSource) Then Exit Function
+
+    I = FreeFile
+
+    Open strFileSource For Binary Access Read Lock Write As I
+
+    n = LOF(I) - 1
+
+    ReDim lpdata(0 To n)
+    Get I, , lpdata
+    Close I
+
+    EncodFileToBase64String = EncodeBase64Byte(lpdata)
+End Function
+
+'对文件进行Base64编码，并将编码后的内容直接写入一个文本文件中
+Public Sub EncodFileToBase64File(strFileSource As String, strFileBase64Desti As String)
+Dim I
+
+    'ts.Write (EncodFileToBase64String(strFileSource))
+    'ts.Close
+    Dim Data
+    Data = EncodFileToBase64String(strFileSource)
+    Dim fso As New FileSystemObject
+        Dim txtfile As File
+        Dim ts As TextStream
+        If fso.FileExists(strFileBase64Desti) = True Then
+        fso.DeleteFile (strFileBase64Desti)
+        End If
+        fso.CreateTextFile strFileBase64Desti
+        Set txtfile = fso.GetFile(strFileBase64Desti)
+        Set ts = txtfile.OpenAsTextStream(ForWriting)
+        ts.Write Data
+        ts.Close
+End Sub

@@ -1,0 +1,5 @@
+D:\听雨口语\十六进制文本转二进制\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+D:\听雨口语\十六进制文本转二进制\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+D:\听雨口语\十六进制文本转二进制\ConsoleApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\听雨口语\十六进制文本转二进制\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+D:\听雨口语\十六进制文本转二进制\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb

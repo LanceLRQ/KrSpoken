@@ -1,0 +1,6 @@
+D:\听雨口语\功能试验\视频播放\VideoAudioPlayerLib\bin\Release\VideoAudioPlayerLib.dll
+D:\听雨口语\功能试验\视频播放\VideoAudioPlayerLib\bin\Release\VideoAudioPlayerLib.pdb
+D:\听雨口语\功能试验\视频播放\VideoAudioPlayerLib\bin\Release\DirectShowLib-2005.dll
+D:\听雨口语\功能试验\视频播放\VideoAudioPlayerLib\obj\Release\ResolveAssemblyReference.cache
+D:\听雨口语\功能试验\视频播放\VideoAudioPlayerLib\obj\Release\VideoAudioPlayerLib.dll
+D:\听雨口语\功能试验\视频播放\VideoAudioPlayerLib\obj\Release\VideoAudioPlayerLib.pdb

@@ -1,0 +1,10 @@
+D:\听雨口语\功能试验\Wave\bin\Debug\VBAudioPlayer.dll
+D:\听雨口语\功能试验\Wave\bin\Debug\VBAudioPlayer.pdb
+D:\听雨口语\功能试验\Wave\bin\Debug\VBAudioPlayer.xml
+D:\听雨口语\功能试验\Wave\obj\Debug\ResolveAssemblyReference.cache
+D:\听雨口语\功能试验\Wave\obj\Debug\KrSpoken.VBAudioPlayer.Resources.resources
+D:\听雨口语\功能试验\Wave\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\听雨口语\功能试验\Wave\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\听雨口语\功能试验\Wave\obj\Debug\VBAudioPlayer.dll
+D:\听雨口语\功能试验\Wave\obj\Debug\VBAudioPlayer.xml
+D:\听雨口语\功能试验\Wave\obj\Debug\VBAudioPlayer.pdb

@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>yeti.mmedia</name>
+    </assembly>
+    <members>
+        <member name="T:Yeti.MMedia.WaveWriter">
+            <summary>
+            Save RAW PCM data to a stream in WAVE format
+            </summary>
+        </member>
+        <member name="P:Yeti.MMedia.AudioWriter.ConfigWidth">
+            <summary>
+            Width of the config control
+            </summary>
+        </member>
+        <member name="P:Yeti.MMedia.AudioWriter.ConfigHeight">
+            <summary>
+            Height of the config control
+            </summary>
+        </member>
+        <member name="P:Yeti.MMedia.AudioWriter.OptimalBufferSize">
+            <summary>
+            Optimal size of the buffer used in each write operation to obtain best performance.
+            This value must be greater than 0 
+            </summary>
+        </member>
+        <member name="T:Yeti.Controls.NumericTextBox">
+            <summary>
+            Define a TextBox that allow only integer numbers.
+            </summary>
+        </member>
+        <member name="T:Yeti.MMedia.EditWaveWriter">
+            <summary>
+            Summary description for EditWaveWriter.
+            </summary>
+        </member>
+        <member name="F:Yeti.MMedia.EditWaveWriter.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Yeti.MMedia.EditWaveWriter.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Yeti.MMedia.EditWaveWriter.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Yeti.MMedia.AudioWriterConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Yeti.MMedia.AudioWriterConfig.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            A constructor with this signature must be implemented by descendants. 
+            <see cref="T:System.Runtime.Serialization.ISerializable"/> for more information
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo"/> where is the serialized data.</param>
+            <param name="context">The source (see <see cref="T:System.Runtime.Serialization.StreamingContext"/>) for this serialization.</param>
+        </member>
+        <member name="T:Yeti.MMedia.EditFormat">
+            <summary>
+            Summary description for EditFormat.
+            </summary>
+        </member>
+        <member name="M:Yeti.MMedia.EditFormat.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Yeti.MMedia.EditFormat.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Yeti.Sys.Win32">
+            <summary>
+            Win32 API functions
+            </summary>
+        </member>
+    </members>
+</doc>
